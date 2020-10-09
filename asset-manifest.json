@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/shopbridge/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/shopbridge/static/js/main.ca580345.chunk.js",
-    "main.js.map": "/shopbridge/static/js/main.ca580345.chunk.js.map",
+    "main.js": "/shopbridge/static/js/main.b50a67b9.chunk.js",
+    "main.js.map": "/shopbridge/static/js/main.b50a67b9.chunk.js.map",
     "runtime-main.js": "/shopbridge/static/js/runtime-main.b94c1df7.js",
     "runtime-main.js.map": "/shopbridge/static/js/runtime-main.b94c1df7.js.map",
     "static/js/2.8000717e.chunk.js": "/shopbridge/static/js/2.8000717e.chunk.js",
     "static/js/2.8000717e.chunk.js.map": "/shopbridge/static/js/2.8000717e.chunk.js.map",
     "index.html": "/shopbridge/index.html",
-    "precache-manifest.72d3804f8816dc2c2a80799da1333102.js": "/shopbridge/precache-manifest.72d3804f8816dc2c2a80799da1333102.js",
+    "precache-manifest.f2be8289dca066aa6b533b642fe5d82d.js": "/shopbridge/precache-manifest.f2be8289dca066aa6b533b642fe5d82d.js",
     "service-worker.js": "/shopbridge/service-worker.js",
     "static/css/main.27fd15f6.chunk.css.map": "/shopbridge/static/css/main.27fd15f6.chunk.css.map",
     "static/js/2.8000717e.chunk.js.LICENSE.txt": "/shopbridge/static/js/2.8000717e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b94c1df7.js",
     "static/js/2.8000717e.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.ca580345.chunk.js"
+    "static/js/main.b50a67b9.chunk.js"
   ]
 }

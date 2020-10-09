@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b611f8ac24497ca8f24a6856123f20c1",
+    "revision": "02101491b5dbc4988f4ba4554f8f6bf7",
     "url": "/shopbridge/index.html"
   },
   {
-    "revision": "a62d32bc18176c4f3b71",
+    "revision": "84b0cd023c3921ba7350",
     "url": "/shopbridge/static/css/main.27fd15f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopbridge/static/js/2.8000717e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a62d32bc18176c4f3b71",
-    "url": "/shopbridge/static/js/main.ca580345.chunk.js"
+    "revision": "84b0cd023c3921ba7350",
+    "url": "/shopbridge/static/js/main.b50a67b9.chunk.js"
   },
   {
     "revision": "061884e5c6873d081270",
