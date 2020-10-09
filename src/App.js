@@ -3,7 +3,6 @@ import './App.css';
 import Basket from './components/Basket';
 import Filter from './components/filter';
 import Products from './components/Products';
-import prodlist from './dbdata';
 
 class App extends React.Component {
   constructor() {
@@ -56,8 +55,12 @@ class App extends React.Component {
     })
   }
   componentDidMount() {
-    //fetch from Django
-    this.setState({products : prodlist});
+    fetch("https://shopbridge.herokuapp.com/")
+     .then(resp => resp.json())
+     .then(prodlist => {
+      this.setState({products : prodlist});
+     });
+
     if(localStorage.getItem('cartItems')) {
       this.setState({cartItems: JSON.parse(localStorage.getItem('cartItems'))});
     }
