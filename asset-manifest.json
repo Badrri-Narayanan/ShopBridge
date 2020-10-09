@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Badrri-Narayanan/shopbridge/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/Badrri-Narayanan/shopbridge/static/js/main.6b1297b4.chunk.js",
+    "main.js.map": "/Badrri-Narayanan/shopbridge/static/js/main.6b1297b4.chunk.js.map",
+    "runtime-main.js": "/Badrri-Narayanan/shopbridge/static/js/runtime-main.ff4d33db.js",
+    "runtime-main.js.map": "/Badrri-Narayanan/shopbridge/static/js/runtime-main.ff4d33db.js.map",
+    "static/js/2.8000717e.chunk.js": "/Badrri-Narayanan/shopbridge/static/js/2.8000717e.chunk.js",
+    "static/js/2.8000717e.chunk.js.map": "/Badrri-Narayanan/shopbridge/static/js/2.8000717e.chunk.js.map",
+    "index.html": "/Badrri-Narayanan/shopbridge/index.html",
+    "precache-manifest.0763762755ce3dffc612481212129afd.js": "/Badrri-Narayanan/shopbridge/precache-manifest.0763762755ce3dffc612481212129afd.js",
+    "service-worker.js": "/Badrri-Narayanan/shopbridge/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/Badrri-Narayanan/shopbridge/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.8000717e.chunk.js.LICENSE.txt": "/Badrri-Narayanan/shopbridge/static/js/2.8000717e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff4d33db.js",
+    "static/js/2.8000717e.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.6b1297b4.chunk.js"
+  ]
+}
