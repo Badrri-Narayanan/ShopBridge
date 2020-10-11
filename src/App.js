@@ -3,6 +3,9 @@ import './App.css';
 import Basket from './components/Basket';
 import Filter from './components/filter';
 import Products from './components/Products';
+import AppProducts from './components/AddProducts';
+import UpdateProduct from './components/UpdateProduct';
+
 
 class App extends React.Component {
   constructor() {
@@ -12,6 +15,7 @@ class App extends React.Component {
       filteredProduct : [],
       sort: '',
       cartItems: [],
+      navigation: 'home',
     }
   }
   handleSort = (event) => {
@@ -55,7 +59,8 @@ class App extends React.Component {
     })
   }
   componentDidMount() {
-    fetch("https://shopbridge.herokuapp.com/")
+    //fetch("https://shopbridge.herokuapp.com/")
+    fetch("http://localhost:5000")
      .then(resp => resp.json())
      .then(prodlist => {
       this.setState({products : prodlist});
@@ -72,16 +77,44 @@ class App extends React.Component {
           <hr/>
           <div className='row'>
             <div className='col-md-8'>
-              <Filter 
-                handleSort={this.handleSort}
-                count={this.state.products.length}
-              />
-              <hr/>
-              <Products 
-                prodlist = {this.state.products}
-                isButtonDisabled={this.state.isButtonDisabled}
-                handleAddToCart = {this.handleAddToCart} 
-              />
+              <div className="row alert alert-info">
+                <div className="col-md-4">
+                  <a href="#home" onClick={() => { this.setState({navigation: 'home'}) } }>
+                    <b>Home</b>
+                  </a>
+                </div>
+                <div className="col-md-4">
+                  <a href="#addNew" onClick={() => { this.setState({navigation: 'addNew'}) } }>
+                    <b>Add New</b>
+                  </a>
+                </div>
+                <div className="col-md-4">
+                  <a href="#update" onClick={() => { this.setState({navigation: 'update'}) } }>
+                    <b>Update</b>
+                  </a>
+                </div>
+              </div>
+              {
+                (this.state.navigation === 'home')?
+                  <div>
+                    <Filter 
+                      handleSort={this.handleSort}
+                      count={this.state.products.length}
+                    />
+                    <hr/>
+                    <Products 
+                      prodlist = {this.state.products}
+                      isButtonDisabled={this.state.isButtonDisabled}
+                      handleAddToCart = {this.handleAddToCart} 
+                    />
+                  </div>
+                  :
+                  (this.state.navigation === 'addNew')?
+                  <AppProducts/>
+                  :
+                  <UpdateProduct/>
+              }
+
             </div>
             <div className='col-md-4'>
               <Basket 
