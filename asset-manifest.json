@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/shopbridge/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/shopbridge/static/js/main.b50a67b9.chunk.js",
-    "main.js.map": "/shopbridge/static/js/main.b50a67b9.chunk.js.map",
+    "main.js": "/shopbridge/static/js/main.16e5bd47.chunk.js",
+    "main.js.map": "/shopbridge/static/js/main.16e5bd47.chunk.js.map",
     "runtime-main.js": "/shopbridge/static/js/runtime-main.b94c1df7.js",
     "runtime-main.js.map": "/shopbridge/static/js/runtime-main.b94c1df7.js.map",
-    "static/js/2.8000717e.chunk.js": "/shopbridge/static/js/2.8000717e.chunk.js",
-    "static/js/2.8000717e.chunk.js.map": "/shopbridge/static/js/2.8000717e.chunk.js.map",
+    "static/js/2.e6dc2f11.chunk.js": "/shopbridge/static/js/2.e6dc2f11.chunk.js",
+    "static/js/2.e6dc2f11.chunk.js.map": "/shopbridge/static/js/2.e6dc2f11.chunk.js.map",
     "index.html": "/shopbridge/index.html",
-    "precache-manifest.f2be8289dca066aa6b533b642fe5d82d.js": "/shopbridge/precache-manifest.f2be8289dca066aa6b533b642fe5d82d.js",
+    "precache-manifest.26ecb7d459dc9b2d3352bcaecc309b63.js": "/shopbridge/precache-manifest.26ecb7d459dc9b2d3352bcaecc309b63.js",
     "service-worker.js": "/shopbridge/service-worker.js",
     "static/css/main.27fd15f6.chunk.css.map": "/shopbridge/static/css/main.27fd15f6.chunk.css.map",
-    "static/js/2.8000717e.chunk.js.LICENSE.txt": "/shopbridge/static/js/2.8000717e.chunk.js.LICENSE.txt"
+    "static/js/2.e6dc2f11.chunk.js.LICENSE.txt": "/shopbridge/static/js/2.e6dc2f11.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b94c1df7.js",
-    "static/js/2.8000717e.chunk.js",
+    "static/js/2.e6dc2f11.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.b50a67b9.chunk.js"
+    "static/js/main.16e5bd47.chunk.js"
   ]
 }
