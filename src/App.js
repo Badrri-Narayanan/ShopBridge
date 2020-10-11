@@ -59,8 +59,7 @@ class App extends React.Component {
     })
   }
   componentDidMount() {
-    //fetch("https://shopbridge.herokuapp.com/")
-    fetch("http://localhost:5000")
+    fetch("https://shopbridge.herokuapp.com/")
      .then(resp => resp.json())
      .then(prodlist => {
       this.setState({products : prodlist});
