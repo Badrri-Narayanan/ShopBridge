@@ -18,9 +18,9 @@ export default class UpdateProduct extends React.Component {
         }
     
         handleSubmit = (event) => {
+            event.preventDefault();
             this.setState({result:''});
-            //fetch('https://guarded-garden-90311.herokuapp.com/register', {
-            fetch("http://localhost:5000", {
+            fetch('https://shopbridge.herokuapp.com/', {
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -31,15 +31,12 @@ export default class UpdateProduct extends React.Component {
                     'imgurl': this.state.imgurl,
                 })
             }).then(response => response.json())
-            .then(data => {
-                if(data !== "ok") {
-                    this.setState({result: data});
-                    event.preventDefault();
-                } else {
+            .then(data => this.setState( {result: data}, () => {
+                if(data === "ok") {
                     alert(data);
                     window.location.reload();
                 }
-            });
+            } ));
         }
     
         render() {

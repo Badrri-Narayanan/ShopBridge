@@ -16,10 +16,14 @@ export default class AddProducts extends React.Component {
         this.setState({[event.target.id] : event.target.value});
     }
   
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
+        event.preventDefault();
         fetch('https://shopbridge.herokuapp.com/', {
 			method: 'post',
-			headers: {'Content-Type': 'application/json'},
+			headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
 			body: JSON.stringify({
 				'title': this.state.title,
 				'description': this.state.description,
@@ -27,15 +31,12 @@ export default class AddProducts extends React.Component {
                 'imgurl': this.state.imgurl,
 			})
 		}).then(response => response.json())
-		.then(data => {
-            if(data !== "added") {
-                this.setState({result: data});
-                event.preventDefault();
-            } else {
+		.then(data => this.setState( {result: data}, () => {
+            if(data === "added") {
                 alert(data);
                 window.location.reload();
             }
-        });
+        } ));
     }
   
     render() {
