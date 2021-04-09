@@ -1,0 +1,15 @@
+.app {
+    text-align: center;
+}
+
+.app-body {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 5px;
+}
+
+.header {
+    width: 90%;
+    height: 300px;     
+}
